@@ -8,13 +8,14 @@ import MyNav from './component/MyNav';
 import { Row } from 'react-bootstrap';
 function App() {
   return (
-    <>
+    <div>
+   
  <MyNav></MyNav>
  <Row>
    <SingleCard></SingleCard>
  </Row>
 
-</>
+</div>
   );
 }
 

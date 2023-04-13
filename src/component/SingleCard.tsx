@@ -43,13 +43,16 @@ useEffect(() => {
     <>
     <Row className='my-5 justify-content-center'>
 {card.map((item)=>(
-   <Card className='bg-dark mx-1 my-1' style={{ width: '18rem'}}>
+   <Card className='bg-dark mx-1 my-1 border border-white rounded-5 overflow-hidden' style={{ width: '18rem'}}>
    <Card.Img variant="top" src={item.imageUrl}  />
    <Card.Body className='bg-dark text-light'>
      <Card.Title>{item.title}</Card.Title>
      <div className='overflow-auto'>
          <Card.Text >
-       {item.summary}
+            <>
+                 {item.summary}
+            </>
+  
 
      </Card.Text>
      </div>
